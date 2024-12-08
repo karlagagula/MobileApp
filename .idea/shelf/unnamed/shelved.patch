@@ -1,0 +1,299 @@
+Index: app/src/main/res/layout/helper.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<android.support.constraint.ConstraintLayout\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\">\n\n    <TextView\n        android:id=\"@+id/helperName\"\n        android:layout_width=\"225dp\"\n        android:layout_height=\"31dp\"\n        android:layout_marginEnd=\"8dp\"\n        android:layout_marginLeft=\"8dp\"\n        android:layout_marginRight=\"8dp\"\n        android:layout_marginStart=\"8dp\"\n        android:layout_marginTop=\"64dp\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Medium\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.083\"\n        app:layout_constraintStart_toEndOf=\"@+id/textView3\"\n        app:layout_constraintTop_toTopOf=\"parent\" />\n\n    <TextView\n        android:id=\"@+id/textView3\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"26dp\"\n        android:layout_marginEnd=\"8dp\"\n        android:layout_marginLeft=\"4dp\"\n        android:layout_marginRight=\"8dp\"\n        android:layout_marginStart=\"4dp\"\n        android:layout_marginTop=\"64dp\"\n        android:text=\"Instuktor/ica: \"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Medium\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.045\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\" />\n\n    <TextView\n        android:id=\"@+id/textView5\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginEnd=\"8dp\"\n        android:layout_marginLeft=\"20dp\"\n        android:layout_marginRight=\"8dp\"\n        android:layout_marginStart=\"20dp\"\n        android:layout_marginTop=\"8dp\"\n        android:text=\"Lokacija:\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Medium\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.0\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toBottomOf=\"@+id/textView3\" />\n\n    <TextView\n        android:id=\"@+id/helperLocation\"\n        android:layout_width=\"252dp\"\n        android:layout_height=\"31dp\"\n        android:layout_marginEnd=\"112dp\"\n        android:layout_marginLeft=\"8dp\"\n        android:layout_marginRight=\"112dp\"\n        android:layout_marginStart=\"8dp\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Medium\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.0\"\n        app:layout_constraintStart_toEndOf=\"@+id/textView5\"\n        app:layout_constraintTop_toBottomOf=\"@+id/helperName\" />\n\n    <TextView\n        android:id=\"@+id/helperPrice\"\n        android:layout_width=\"109dp\"\n        android:layout_height=\"33dp\"\n        android:layout_marginLeft=\"44dp\"\n        android:layout_marginStart=\"44dp\"\n        android:layout_marginTop=\"16dp\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Headline\"\n        app:layout_constraintStart_toEndOf=\"@+id/helperSubject\"\n        app:layout_constraintTop_toTopOf=\"parent\" />\n\n    <TextView\n        android:id=\"@+id/textView10\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginEnd=\"8dp\"\n        android:layout_marginLeft=\"4dp\"\n        android:layout_marginRight=\"8dp\"\n        android:layout_marginStart=\"4dp\"\n        android:layout_marginTop=\"12dp\"\n        android:text=\"Email:\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Medium\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.061\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toBottomOf=\"@+id/textView5\" />\n\n    <TextView\n        android:id=\"@+id/helperEmail\"\n        android:layout_width=\"285dp\"\n        android:layout_height=\"31dp\"\n        android:layout_marginEnd=\"88dp\"\n        android:layout_marginLeft=\"8dp\"\n        android:layout_marginRight=\"88dp\"\n        android:layout_marginStart=\"8dp\"\n        android:layout_marginTop=\"8dp\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Medium\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.0\"\n        app:layout_constraintStart_toEndOf=\"@+id/textView10\"\n        app:layout_constraintTop_toBottomOf=\"@+id/helperLocation\" />\n\n    <TextView\n        android:id=\"@+id/textView12\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginEnd=\"8dp\"\n        android:layout_marginLeft=\"8dp\"\n        android:layout_marginRight=\"8dp\"\n        android:layout_marginStart=\"8dp\"\n        android:layout_marginTop=\"12dp\"\n        android:text=\"Mobitel:\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Medium\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.062\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toBottomOf=\"@+id/textView10\" />\n\n    <TextView\n        android:id=\"@+id/helperPhone\"\n        android:layout_width=\"226dp\"\n        android:layout_height=\"30dp\"\n        android:layout_marginEnd=\"8dp\"\n        android:layout_marginLeft=\"24dp\"\n        android:layout_marginRight=\"8dp\"\n        android:layout_marginStart=\"24dp\"\n        android:layout_marginTop=\"4dp\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Medium\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.0\"\n        app:layout_constraintStart_toEndOf=\"@+id/textView12\"\n        app:layout_constraintTop_toBottomOf=\"@+id/helperEmail\" />\n\n    <TextView\n        android:id=\"@+id/textView14\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"\n        android:layout_marginBottom=\"8dp\"\n        android:layout_marginEnd=\"8dp\"\n        android:layout_marginRight=\"8dp\"\n        android:layout_marginTop=\"8dp\"\n        android:text=\"Dolazak na adresu:\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Medium\"\n        app:layout_constraintBottom_toBottomOf=\"parent\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.071\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toBottomOf=\"@+id/textView12\"\n        app:layout_constraintVertical_bias=\"0.0\" />\n\n    <TextView\n        android:id=\"@+id/helperArrival\"\n        android:layout_width=\"58dp\"\n        android:layout_height=\"27dp\"\n        android:layout_marginEnd=\"104dp\"\n        android:layout_marginLeft=\"8dp\"\n        android:layout_marginRight=\"104dp\"\n        android:layout_marginStart=\"8dp\"\n        android:layout_marginTop=\"8dp\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Medium\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.195\"\n        app:layout_constraintStart_toEndOf=\"@+id/textView14\"\n        app:layout_constraintTop_toBottomOf=\"@+id/helperPhone\" />\n\n    <TextView\n        android:id=\"@+id/helperSubject\"\n        android:layout_width=\"169dp\"\n        android:layout_height=\"34dp\"\n        android:layout_marginTop=\"16dp\"\n        android:textAppearance=\"@style/TextAppearance.AppCompat.Headline\"\n        app:layout_constraintTop_toTopOf=\"parent\"\n        tools:layout_editor_absoluteX=\"38dp\" />\n\n</android.support.constraint.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/helper.xml	(revision 9182d83bd84789f6c679a6e4240cfa26dcb8c51c)
++++ app/src/main/res/layout/helper.xml	(date 1574520362080)
+@@ -10,175 +10,220 @@
+         android:id="@+id/helperName"
+         android:layout_width="225dp"
+         android:layout_height="31dp"
+-        android:layout_marginEnd="8dp"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="16dp"
+         android:layout_marginLeft="8dp"
+-        android:layout_marginRight="8dp"
++        android:layout_marginRight="16dp"
+         android:layout_marginStart="8dp"
+-        android:layout_marginTop="64dp"
++        android:layout_marginTop="8dp"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.083"
+-        app:layout_constraintStart_toEndOf="@+id/textView3"
+-        app:layout_constraintTop_toTopOf="parent" />
++        app:layout_constraintHorizontal_bias="1.0"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.153" />
+ 
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+-        android:layout_height="26dp"
++        android:layout_height="32dp"
++        android:layout_marginBottom="8dp"
+         android:layout_marginEnd="8dp"
+-        android:layout_marginLeft="4dp"
++        android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
+-        android:layout_marginStart="4dp"
+-        android:layout_marginTop="64dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
+         android:text="Instuktor/ica: "
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.045"
++        app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.153" />
+ 
+     <TextView
+         android:id="@+id/textView5"
+         android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
++        android:layout_height="32dp"
++        android:layout_marginBottom="8dp"
+         android:layout_marginEnd="8dp"
+-        android:layout_marginLeft="20dp"
++        android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
+-        android:layout_marginStart="20dp"
++        android:layout_marginStart="8dp"
+         android:layout_marginTop="8dp"
+         android:text="Lokacija:"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.0"
++        app:layout_constraintHorizontal_bias="0.131"
+         app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.244" />
+ 
+     <TextView
+         android:id="@+id/helperLocation"
+-        android:layout_width="252dp"
+-        android:layout_height="31dp"
+-        android:layout_marginEnd="112dp"
++        android:layout_width="237dp"
++        android:layout_height="29dp"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="16dp"
+         android:layout_marginLeft="8dp"
+-        android:layout_marginRight="112dp"
++        android:layout_marginRight="16dp"
+         android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.0"
+-        app:layout_constraintStart_toEndOf="@+id/textView5"
+-        app:layout_constraintTop_toBottomOf="@+id/helperName" />
++        app:layout_constraintHorizontal_bias="1.0"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.242" />
+ 
+     <TextView
+         android:id="@+id/helperPrice"
+         android:layout_width="109dp"
+         android:layout_height="33dp"
+-        android:layout_marginLeft="44dp"
+-        android:layout_marginStart="44dp"
+-        android:layout_marginTop="16dp"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginLeft="8dp"
++        android:layout_marginRight="16dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
+         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+-        app:layout_constraintStart_toEndOf="@+id/helperSubject"
+-        app:layout_constraintTop_toTopOf="parent" />
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="1.0"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.564" />
+ 
+     <TextView
+         android:id="@+id/textView10"
+         android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
++        android:layout_height="32dp"
++        android:layout_marginBottom="8dp"
+         android:layout_marginEnd="8dp"
+-        android:layout_marginLeft="4dp"
++        android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
+-        android:layout_marginStart="4dp"
+-        android:layout_marginTop="12dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
+         android:text="Email:"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.061"
++        app:layout_constraintHorizontal_bias="0.193"
+         app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.339" />
+ 
+     <TextView
+         android:id="@+id/helperEmail"
+-        android:layout_width="285dp"
+-        android:layout_height="31dp"
+-        android:layout_marginEnd="88dp"
++        android:layout_width="240dp"
++        android:layout_height="30dp"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
+         android:layout_marginLeft="8dp"
+-        android:layout_marginRight="88dp"
++        android:layout_marginRight="8dp"
+         android:layout_marginStart="8dp"
+         android:layout_marginTop="8dp"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.0"
+-        app:layout_constraintStart_toEndOf="@+id/textView10"
+-        app:layout_constraintTop_toBottomOf="@+id/helperLocation" />
++        app:layout_constraintHorizontal_bias="0.937"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.337" />
+ 
+     <TextView
+         android:id="@+id/textView12"
+         android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
++        android:layout_height="31dp"
++        android:layout_marginBottom="8dp"
+         android:layout_marginEnd="8dp"
+         android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
+         android:layout_marginStart="8dp"
+-        android:layout_marginTop="12dp"
++        android:layout_marginTop="8dp"
+         android:text="Mobitel:"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.062"
++        app:layout_constraintHorizontal_bias="0.151"
+         app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.443" />
+ 
+     <TextView
+         android:id="@+id/helperPhone"
+-        android:layout_width="226dp"
+-        android:layout_height="30dp"
+-        android:layout_marginEnd="8dp"
+-        android:layout_marginLeft="24dp"
+-        android:layout_marginRight="8dp"
+-        android:layout_marginStart="24dp"
+-        android:layout_marginTop="4dp"
++        android:layout_width="229dp"
++        android:layout_height="29dp"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginLeft="8dp"
++        android:layout_marginRight="16dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.0"
+-        app:layout_constraintStart_toEndOf="@+id/textView12"
+-        app:layout_constraintTop_toBottomOf="@+id/helperEmail" />
++        app:layout_constraintHorizontal_bias="1.0"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.442" />
+ 
+     <TextView
+         android:id="@+id/textView14"
+         android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
++        android:layout_height="30dp"
+         android:layout_marginBottom="8dp"
+         android:layout_marginEnd="8dp"
++        android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
++        android:layout_marginStart="8dp"
+         android:layout_marginTop="8dp"
+         android:text="Dolazak na adresu:"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+         app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.071"
++        app:layout_constraintEnd_toStartOf="@+id/helperArrival"
++        app:layout_constraintHorizontal_bias="0.615"
+         app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/textView12"
+-        app:layout_constraintVertical_bias="0.0" />
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.561" />
+ 
+     <TextView
+         android:id="@+id/helperArrival"
+         android:layout_width="58dp"
+         android:layout_height="27dp"
+-        android:layout_marginEnd="104dp"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="20dp"
+         android:layout_marginLeft="8dp"
+-        android:layout_marginRight="104dp"
++        android:layout_marginRight="20dp"
+         android:layout_marginStart="8dp"
+         android:layout_marginTop="8dp"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.195"
+-        app:layout_constraintStart_toEndOf="@+id/textView14"
+-        app:layout_constraintTop_toBottomOf="@+id/helperPhone" />
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toStartOf="@+id/helperPrice"
++        app:layout_constraintHorizontal_bias="0.976"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.564" />
+ 
+     <TextView
+         android:id="@+id/helperSubject"
+         android:layout_width="169dp"
+         android:layout_height="34dp"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginLeft="8dp"
++        android:layout_marginRight="8dp"
++        android:layout_marginStart="8dp"
+         android:layout_marginTop="16dp"
+         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        tools:layout_editor_absoluteX="38dp" />
++        app:layout_constraintVertical_bias="0.0" />
+ 
+ </android.support.constraint.ConstraintLayout>
+\ No newline at end of file

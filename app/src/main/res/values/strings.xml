@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">RMA</string>
+    <string name="facebook_app_id">522082268569164</string>
+    <string name="fb_login_protocol_scheme">fb522082268569164</string>
+
+    <string name="location_prompt"> Choose a country </string>
+    <string-array name="location_list">
+        <item> Zagrebačka </item>
+        <item> Krapinsko-zagorska </item>
+        <item> Sisačko moslavačka </item>
+        <item> Karlovačka </item>
+        <item> Varaždinska </item>
+        <item> Koprivničko-križevačka </item>
+        <item> Bjelovarsko - bilogorska </item>
+        <item> Primorsko-goranska </item>
+        <item> Ličko-senjska </item>
+        <item> Virovitičko-podravska </item>
+        <item> Požeško-slavonska </item>
+        <item> Brodsko-posavska </item>
+        <item> Zadarska </item>
+        <item> Osječko-baranjska </item>
+        <item> Šibensko-kninska </item>
+        <item> Vukovarsko-srijemska </item>
+        <item> Splitsko-dalmatinska </item>
+        <item> Istarska </item>
+        <item> Dubrovačko-neretvanska </item>
+        <item> Međimurska </item>
+        <item> Grad Zagreb </item>
+    </string-array>
+
+    <string name="subject_prompt"> Choose a country </string>
+    <string-array name="subject_list">
+        <item> Matematika </item>
+        <item> Fizika </item>
+        <item> Kemija </item>
+        <item> Biologija </item>
+        <item> Engleski jezik</item>
+        <item> Hrvatski jezik </item>
+        <item> Geografija </item>
+        <item> Povijest </item>
+        <item> Informatika </item>
+        <item> Filozofija </item>
+        <item> Politika i gospodarstvo </item>
+        <item> Sociologija </item>
+        <item> Logika </item>
+    </string-array>
+
+</resources>
+

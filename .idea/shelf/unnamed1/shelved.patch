@@ -1,0 +1,114 @@
+Index: app/src/main/java/tvz/projekt/rma/OtherAds.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/tvz/projekt/rma/OtherAds.java	(date 1574885619643)
++++ app/src/main/java/tvz/projekt/rma/OtherAds.java	(date 1574885619643)
+@@ -0,0 +1,82 @@
++package tvz.projekt.rma;
++
++import android.annotation.SuppressLint;
++import android.os.AsyncTask;
++import android.os.Bundle;
++import android.support.v7.app.AppCompatActivity;
++import android.widget.TextView;
++
++import org.jsoup.Jsoup;
++import org.jsoup.nodes.Document;
++import org.jsoup.nodes.Element;
++import org.jsoup.select.Elements;
++
++import java.io.IOException;
++import java.util.ArrayList;
++import java.util.List;
++
++public class OtherAds extends AppCompatActivity {
++
++    @SuppressLint("StaticFieldLeak")
++    public static TextView textView;
++    public static String title;
++    public static List<Elements> h3 = new ArrayList<>();
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState){
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.other_ads);
++
++        textView = findViewById(R.id.titleAds);
++
++        Content content = new Content();
++        content.execute();
++
++
++    }
++
++    private static class Content extends AsyncTask<Void, Void, Void> {
++
++    /*    private WeakReference<OtherAds> appReference;
++
++        Content(OtherAds context){
++            this.appReference = new WeakReference<>(context);
++        }*/
++
++        @Override
++        protected void onPreExecute() {
++            super.onPreExecute();
++        }
++
++        @Override
++        protected Void doInBackground(Void... voids) {
++            String url = "https://www.moje-instrukcije.com/index.php?option=com_mtree&task=listcats&cat_id=119&Itemid=100012";
++            try {
++                Document document = Jsoup.connect(url).get();
++                title = document.title();
++                Elements listings = document.select("div #listings");
++                Elements list = listings.select(".listing-summary.featured");
++                for(Element element : list){
++                   h3.add(list.select("h3"));
++                }
++
++            } catch (IOException e) {
++                e.printStackTrace();
++            }
++            return null;
++        }
++
++        @Override
++        protected void onPostExecute(Void aVoid) {
++            super.onPostExecute(aVoid);
++            textView.setText(title);
++            for(Elements el : h3){
++                textView.append(el.text());
++            }
++        }
++
++    }
++
++
++}
++
+Index: app/src/main/res/layout/other_ads.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/other_ads.xml	(date 1574879083166)
++++ app/src/main/res/layout/other_ads.xml	(date 1574879083166)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="utf-8"?>
++<android.support.constraint.ConstraintLayout
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++    <TextView
++        android:id="@+id/titleAds"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="TextView"
++        tools:layout_editor_absoluteX="176dp"
++        tools:layout_editor_absoluteY="56dp" />
++</android.support.constraint.ConstraintLayout>
+\ No newline at end of file
